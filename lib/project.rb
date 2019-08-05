@@ -9,7 +9,7 @@ attr_reader :title, :backers
 
  def add_backer(backer)
    @backers << backer
-   project.backed_projects << self
+  backer.backed_projects << self
  end
 
 
